@@ -10,12 +10,12 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script type="text/javascript" src="var.js"></script>
+        <script src="var.js" type="text/javascript" charset="utf-8"></script>
         <link rel="shortcut icon" type="image/x-icon" href="Icone.ico" />
         <link rel="canonical" href="https://www.monsite.fr"/>
         <link rel="stylesheet" type="text/css" href="magnify.css">
         <title>La Ferme du bout du chemin</title>
-        <meta name="description" content="Productrices bio de calvados, cidre et jus de pomme dnas le pays d'auge situé en Normandie"/>
+        <meta name="description" content="Productrices bio de calvados, cidre et jus de pomme dans le pays d'auge situé en Normandie"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <meta property="analytics-track" content="monsite - index/tab"/>
         <meta property="analytics-s-channel" content="pageAccueil"/>
@@ -29,21 +29,22 @@
     </head>
 
     <body>
+        <script> src="var.js"</script>
             <header>
             <img src="logolfdbdcblancalpha.png" class="logo">
             <div class="bouttonnav" id="bouttonnav">
-                  <div class="barre"></div>
-                  <div class="barre"></div>
-                  <div class="barre"></div>
+                  <div class="barre" id="barre1"></div>
+                  <div class="barre" id="barre2"></div>
+                  <div class="barre" id="barre3"></div>
             </div>
             <nav>
                 <ul>
-                    <a href="#"><li>La gamme <img src="pictogamme.png" class="pictogamme"><ul>
-                                                <li>Notre Calvados</li>
-                                                <li>Notre cidre doux</li>
-                                                <li>Notre cidre demi-sec</li>
-                                                <li>Notre cidre brut</li>
-                                                <li>Notre jus de pomme</li>
+                    <a href="#gamme"><li>La gamme <img src="pictogamme.png" class="pictogamme"><ul>
+                                                <li> <mark class="calvados">Notre Calvados</mark></li>
+                                                <li> <mark class="cidredoux">Notre cidre doux</mark></li>
+                                                <li> <mark class="cidredemisec">Notre cidre demi-sec</mark></li>
+                                                <li> <mark class="cidrebrut">Notre cidre brut</mark></li>
+                                                <li> <mark class="jusdepomme">Notre jus de pomme</mark></li>
                                              </ul></li></a>
                     <a href="#"><li>L'histoire de la ferme <img src="pictoplume.png" class="pictoplume"><ul>
                                                               <li>Le début du chemin</li>
@@ -61,12 +62,97 @@
 
             <section class="accueil">
                  <video controls>
-                     <source src="videotrim.mp4" type="video/mp4">
+                     <source src="video.mp4" type="video/mp4">
                  </video>
             </section>
-
-
-
+            <section class="gamme" id="gamme">
+                <h3 class="txtgamme">Notre gamme</h3>
+                <h1>Calvados, cidre, jus de pomme, tout est bio et fabriqué en Normandie !</h1>
+                <div class="imggamme">
+                    <div class="produitgamme"><h3 class="titreproduit">Calvados</h3><div class="centbutton"><button class="decouvrir">Découvrir</button></div><img src="calvados.png"><div class="prix">30€ TTC</div></div>
+                    <div class="produitgamme"><h3 class="titreproduit">Cidre brut</h3><div class="centbutton"><button class="decouvrir">Découvrir</button></div><img src="cidrebrut.png"><div class="prix">15€ TTC</div></div>
+                    <div class="produitgamme"><h3 class="titreproduit">Cidre demi-sec</h3><div class="centbutton"><button class="decouvrir">Découvrir</button></div><img src="cidredemisec.png"><div class="prix">15€ TTC</div></div>
+                    <div class="produitgamme"><h3 class="titreproduit">Cidre doux</h3><div class="centbutton"><button class="decouvrir">Découvrir</button></div><img src="cidredoux.png"><div class="prix">15€ TTC</div></div>
+                    <div class="produitgamme"><h3 class="titreproduit">Jus de pomme</h3><div class="centbutton"><button class="decouvrir">Découvrir</button></div><img src="jusdepomme.png"><div class="prix">2.50€ TTC</div></div>
+                </div>
+                <div class="venteferme"><p>Pour commander ces produits de qualité uniquements retirables à la ferme : <br><br> - Appelez nous au <span class="bold">02 31 62 27 24 </span><br><br> - Envoyez nous un mail à <span class="bold">lafermeduboutduchemin14@gmail.com</span> <br><br></p></div>
+                <p class="recevoir">"On sera ravies de vous reçevoir dans notre ferme pour vous donner votre commande avec l'histoire atypique de nos produit derrière"</p>
+            </section>
+            <section class="produit" id="calvados">
+                <div class="description">
+                    <h3 class="titreficheproduit">Notre calvados</h3>
+                    <h4>Ses caractéristiques</h4>
+                    <p>- 30% d'alcool <br> - 0.75cl <br>- Label Agriculture Biologique</p>
+                    <p class="pproduit">Ceci est la description du produit qui se doit d'être suffisament exhaustive pour combler une bonne partie de l'espace consacré sur cette page web afin que l'utilisateur ai accès à toutes les informations nécéssaires sur le produit</p>
+                    <h3 class="vousaussi">Vous aussi, faites vous votre avis sur nos produits</h3>
+                    <div class="imgclients">
+                        <div><img src="client1.jpg"><p class="avisclient"> "Très satisfait, bons produits, ma ferme est très sympatique à découvrir"</p></div>
+                        <div><img src="client1.jpg"><p class="avisclient"> "Très satisfait, bons produits, ma ferme est très sympatique à découvrir"</p></div>
+                        <div><img src="client1.jpg"><p class="avisclient"> "Très satisfait, bons produits, ma ferme est très sympatique à découvrir"</p></div>
+                    </div>
+                </div>
+                <div class="imgproduit"><img src="calvados.png"></div>
+            </section>
+            <section class="produit" id="cidrebrut">
+                <div class="description">
+                    <h3 class="titreficheproduit">Notre cidre brut</h3>
+                    <h4>Ses caractéristiques</h4>
+                    <p>- 7% d'alcool <br> - 0.75cl <br>- Label Agriculture Biologique</p>
+                    <p class="pproduit">Ceci est la description du produit qui se doit d'être suffisament exhaustive pour combler une bonne partie de l'espace consacré sur cette page web afin que l'utilisateur ai accès à toutes les informations nécéssaires sur le produit</p>
+                    <h3 class="vousaussi">Vous aussi, faites vous votre avis sur nos produits</h3>
+                    <div class="imgclients">
+                        <div><img src="client1.jpg"><p class="avisclient"> "Très satisfait, bons produits, ma ferme est très sympatique à découvrir"</p></div>
+                        <div><img src="client1.jpg"><p class="avisclient"> "Très satisfait, bons produits, ma ferme est très sympatique à découvrir"</p></div>
+                        <div><img src="client1.jpg"><p class="avisclient"> "Très satisfait, bons produits, ma ferme est très sympatique à découvrir"</p></div>
+                    </div>
+                </div>
+                <div class="imgproduit"><img src="cidrebrut.png"></div>
+            </section>
+            <section class="produit" id="cidredemisec">
+                <div class="description">
+                    <h3 class="titreficheproduit">Notre cidre demi-sec</h3>
+                    <h4>Ses caractéristiques</h4>
+                    <p>- 5% d'alcool <br> - 0.75cl <br>- Label Agriculture Biologique</p>
+                    <p class="pproduit">Ceci est la description du produit qui se doit d'être suffisament exhaustive pour combler une bonne partie de l'espace consacré sur cette page web afin que l'utilisateur ai accès à toutes les informations nécéssaires sur le produit</p>
+                    <h3 class="vousaussi">Vous aussi, faites vous votre avis sur nos produits</h3>
+                    <div class="imgclients">
+                        <div><img src="client1.jpg"><p class="avisclient"> "Très satisfait, bons produits, ma ferme est très sympatique à découvrir"</p></div>
+                        <div><img src="client1.jpg"><p class="avisclient"> "Très satisfait, bons produits, ma ferme est très sympatique à découvrir"</p></div>
+                        <div><img src="client1.jpg"><p class="avisclient"> "Très satisfait, bons produits, ma ferme est très sympatique à découvrir"</p></div>
+                    </div>
+                </div>
+                <div class="imgproduit"><img src="cidredemisec.png"></div>
+            </section>
+            <section class="produit" id="cidredoux">
+                <div class="description">
+                    <h3 class="titreficheproduit">Notre cidre doux</h3>
+                    <h4>Ses caractéristiques</h4>
+                    <p>- 4% d'alcool <br> - 0.75cl <br>- Label Agriculture Biologique</p>
+                    <p class="pproduit">Ceci est la description du produit qui se doit d'être suffisament exhaustive pour combler une bonne partie de l'espace consacré sur cette page web afin que l'utilisateur ai accès à toutes les informations nécéssaires sur le produit</p>
+                    <h3 class="vousaussi">Vous aussi, faites vous votre avis sur nos produits</h3>
+                    <div class="imgclients">
+                        <div><img src="client1.jpg"><p class="avisclient"> "Très satisfait, bons produits, ma ferme est très sympatique à découvrir"</p></div>
+                        <div><img src="client1.jpg"><p class="avisclient"> "Très satisfait, bons produits, ma ferme est très sympatique à découvrir"</p></div>
+                        <div><img src="client1.jpg"><p class="avisclient"> "Très satisfait, bons produits, ma ferme est très sympatique à découvrir"</p></div>
+                    </div>
+                </div>
+                <div class="imgproduit"><img src="cidredoux.png"></div>
+            </section>
+            <section class="produit" id="jusdepomme">
+                <div class="description">
+                    <h3 class="titreficheproduit">Notre jus de pomme</h3>
+                    <h4>Ses caractéristiques</h4>
+                    <p>- sans alcool <br> - 0.5cl <br>- Label Agriculture Biologique</p>
+                    <p class="pproduit">Ceci est la description du produit qui se doit d'être suffisament exhaustive pour combler une bonne partie de l'espace consacré sur cette page web afin que l'utilisateur ai accès à toutes les informations nécéssaires sur le produit</p>
+                    <h3 class="vousaussi">Vous aussi, faites vous votre avis sur nos produits</h3>
+                    <div class="imgclients">
+                        <div><img src="client1.jpg"><p class="avisclient"> "Très satisfait, bons produits, ma ferme est très sympatique à découvrir"</p></div>
+                        <div><img src="client1.jpg"><p class="avisclient"> "Très satisfait, bons produits, ma ferme est très sympatique à découvrir"</p></div>
+                        <div><img src="client1.jpg"><p class="avisclient"> "Très satisfait, bons produits, ma ferme est très sympatique à découvrir"</p></div>
+                    </div>
+                </div>
+                <div class="imgproduit"><img src="jusdepomme.png"></div>
+            </section>
             <footer>
             <h3>Conditions générales de vente</h3>
             <h3>Mentions légales</h3>

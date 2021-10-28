@@ -1,9 +1,10 @@
-
-
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 0;
-    background-color: black;
+    cursor: url(cur.png), auto;
 }
 header{
     display: block;
@@ -24,7 +25,6 @@ header{
 }
 .bouttonnav{
     position: absolute;
-    cursor: pointer;
     visibility: hidden;
 }
 .barre{
@@ -47,6 +47,7 @@ ul{
 }
 a{
     text-decoration: none;
+    cursor: default;
 }
 li{
     font-family: arial;
@@ -62,9 +63,67 @@ li ul li{
     font-weight: lighter;
     margin-top: 10%;
     margin-bottom: 10%;
+    cursor: default;
 }
-li ul li:hover{
-    font-weight: normal;
+.calvados{
+    background-color: transparent;
+    color: white;
+}
+.calvados:hover{
+   padding: 4px;
+   background-color: #0B0B61;
+   font-weight: bold;
+   border-radius: 10px;
+   text-shadow: black 2px 0 4px;
+   transition-duration: 0.2s;
+}
+.cidredoux{
+    background-color: transparent;
+    color: white;
+}
+.cidredoux:hover{
+   padding: 4px;
+   background-color: #A8F5F3;
+   font-weight: bold;
+   border-radius: 10px;
+   text-shadow: black 2px 0 4px;
+   transition-duration: 0.2s;
+}
+.cidredemisec{
+    background-color: transparent;
+    color: white;
+}
+.cidredemisec:hover{
+   padding: 4px;
+   background-color: #F69E81;
+   font-weight: bold;
+   border-radius: 10px;
+   text-shadow: black 2px 0 4px;
+   transition-duration: 0.2s;
+}
+.cidrebrut{
+    background-color: transparent;
+    color: white;
+}
+.cidrebrut:hover{
+   padding: 4px;
+   background-color: #DE0100;
+   font-weight: bold;
+   border-radius: 10px;
+   text-shadow: black 2px 0 4px;
+   transition-duration: 0.2s;
+}
+.jusdepomme{
+    background-color: transparent;
+    color: white;
+}
+.jusdepomme:hover{
+   padding: 5px;
+   background-color: rgba(255, 255, 255, 0.3);
+   font-weight: bold;
+   border-radius: 10px;
+   text-shadow: black 2px 0 4px;
+   transition-duration: 0.2s;
 }
 .pictogamme{
     height: 40px;
@@ -74,7 +133,6 @@ li ul li:hover{
     margin-left: -15px;
 }
 .accueil{
-    height: 1500px;
     margin-left: 200px;
     margin-right: 0;
     background-size: cover;
@@ -83,14 +141,151 @@ li ul li:hover{
     width: 100%;
     z-index: -1;
 }
+.gamme{
+    margin-left: 200px;
+    background-image: url(fondmotif2.jpg);
+    background-size: cover;
+    z-index: 3;
+    text-align: center;
+    margin-top: -28px;
+    margin-bottom: -28px;
+    }
+.imggamme{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    }
+.txtgamme{
+    font-family: arial;
+    font-size: 30px;
+    padding-top: 20px;
+}
+h1{
+    font-family: arial;
+    font-size: 16px;
+}
+.produitgamme{
+    display: block;
+    text-align: center;
+}
+.produitgamme img{
+    height: 500px;
+    margin-bottom: 0px;
+}
+button{
+    width: 120px;
+    font-family: arial;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 30px;
+}
+button:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    ;
+}
+.centbutton{
+    width: 100%;
+    text-align: center;
+}
+.produit{
+    margin-left: 200px;
+    height: 800px;
+    display: flex;
+    background-image: url(fondmotif.jpg);
+    border-bottom: 1px solid white;
+}
+.description{
+    width: 60%;
+    padding: 50px;
+    display: block;
+}
+.pproduit{
+    width: 50%;
+    margin-right: 50%;
+}
+.vousaussi{
+    font-family: arial;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-top: 50px;
+}
+.titreficheproduit{
+    font-family: arial;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.imgclients{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.imgclients img{
+    height: 200px;
+    border-radius: 10px;
+}
+.imgclients div{
+    width: 250px;
+    text-align: center;
+}
+.avisclient{
+    font-family: arial;
+    font-size: 14px;
+    font-style: italic;
+    width: 100%;
+}
+.imgproduit{
+    width: 40%;
+    text-align: center;
+    margin-top: 50px;
+}
+.imgproduit img{
+    height: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.prix{
+    font-family: arial;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 30px;
+}
+.venteferme{
+    font-family: arial;
+    font-size: 18px;
+}
+.bold{
+    font-weight: bold;
+}
+.recevoir{
+    width: 20%;
+    margin-left: 40%;
+    font-family: arial;
+    font-size: 18px;
+    padding-bottom: 50px;
+    font-style: italic;
+}
 footer{
     display: flex;
     height: 150px;
-    background-color: brown;
+    background-color: black;
     color: white;
     justify-content: space-between;
     justify-content: space-around;
 }
+
 
 
 @media screen and (max-width: 1300px) {
@@ -99,6 +294,9 @@ footer{
         width: 100%;
         height: 230px;
         text-align: center;
+    }
+    .montreheader{
+        height: 750px;
     }
     .logo{
         margin: 0;
@@ -111,6 +309,18 @@ footer{
         left: 50%;
         top: 170px;
         transform: translateX(-50%);
+        cursor: default;
+    }
+    .croix #barre1{
+        transform: rotate(45deg);
+        transition: 0.2s;
+    }
+    .croix #barre2{
+        visibility: hidden;
+    }
+    .croix #barre3{
+        transform: rotate(-45deg) translateY(-10px) translateX(10px);
+        transition: 0.2s;
     }
     nav{
         width: 100%;
@@ -118,12 +328,59 @@ footer{
         margin: 0;
         text-align: center;
     }
+    .montrenav{
+        margin-top: 50px;
+    }
     ul{
         margin: 0;
         width: 100%;
         margin-top: 10px;
         margin-bottom: 10px;
         visibility: hidden;
+    }
+    .montreul{
+        visibility: visible;
+    }
+    .montreul li{
+        visibility: visible;
+    }
+    .montreul li ul li{
+        margin: 20px;
+    }
+    .montreul .calvados:hover{
+        padding: 0;
+        background-color: transparent;
+        font-weight: normal;
+        border-radius: 0;
+        text-shadow: transparent 0px 0 0px;
+    }
+    .montreul .cidredoux:hover{
+        padding: 0;
+        background-color: transparent;
+        font-weight: normal;
+        border-radius: 0;
+        text-shadow: transparent 0px 0 0px;
+    }
+    .montreul .cidredemisec:hover{
+        padding: 0;
+        background-color: transparent;
+        font-weight: normal;
+        border-radius: 0;
+        text-shadow: transparent 0px 0 0px;
+    }
+    .montreul .cidrebrut:hover{
+        padding: 0;
+        background-color: transparent;
+        font-weight: normal;
+        border-radius: 0;
+        text-shadow: transparent 0px 0 0px;
+    }
+    .montreul .jusdepomme:hover{
+        padding: 0;
+        background-color: transparent;
+        font-weight: normal;
+        border-radius: 0;
+        text-shadow: transparent 0px 0 0px;
     }
     li{
         margin-top: 30px;
@@ -136,4 +393,5 @@ footer{
     .accueil{
         margin: 0;
     }
+    
 }
