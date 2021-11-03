@@ -15,6 +15,8 @@ header{
     background-image: url(bgnav.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    -webkit-box-shadow: 3px 0px 11px -4px #000000; 
+    box-shadow: 3px 0px 11px -4px #000000;
 }
 .logo{
     width: 90%;
@@ -26,12 +28,13 @@ header{
 .bouttonnav{
     position: absolute;
     visibility: hidden;
+    margin-top: 50px;
 }
 .barre{
-    width: 30px;
-    height: 3px;
+    width: 60px;
+    height: 6px;
     background-color: white;
-    margin-top: 4px;
+    margin-top: 8px;
 }
 nav{
     width: 180px;
@@ -152,7 +155,7 @@ li ul li{
     }
 .imggamme{
     width: 90%;
-    margin-left: 5%;
+    margin-left: 5%; 
     display: flex;
     justify-content: space-around;
     justify-content: space-between;
@@ -170,9 +173,17 @@ h1{
     display: block;
     text-align: center;
 }
+.produitgammefantome{
+    display: none;
+    margin-right: 10%;
+}
 .produitgamme img{
     height: 500px;
     margin-bottom: 0px;
+}
+.produitgammefantome img{
+    height: 0px;
+    margin-bottom: 0px; 
 }
 button{
     width: 120px;
@@ -233,7 +244,7 @@ button:hover{
     margin-top: 50px;
 }
 .imgclients img{
-    height: 200px;
+    height: 150px;
     border-radius: 10px;
 }
 .imgclients div{
@@ -242,7 +253,7 @@ button:hover{
 }
 .avisclient{
     font-family: arial;
-    font-size: 14px;
+    font-size: 16px;
     font-style: italic;
     width: 100%;
 }
@@ -288,12 +299,13 @@ footer{
 
 
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 700px) {
     header{
         position: relative;
         width: 100%;
-        height: 230px;
+        height: 300px;
         text-align: center;
+        box-shadow: none;
     }
     .montreheader{
         height: 750px;
@@ -301,7 +313,7 @@ footer{
     .logo{
         margin: 0;
         margin-top: 30px;
-        height: 100px;
+        height: 150px;
         width: auto;
     }
     .bouttonnav{
@@ -391,7 +403,66 @@ footer{
         margin-bottom: 10px;
     }
     .accueil{
-        margin: 0;
+        margin-left: 0px;
     }
-    
+    .gamme{
+        margin-left: 0px;
+        width: 100%;
+        justify-content: initial;
+    }
+    .imggamme{
+        width: 100%;
+        margin-left: 0%;
+        display: flex;
+        overflow-x: auto;
+    }
+    .imggamme::-webkit-scrollbar {
+       width: 0px;
+    }
+    .produitgamme{
+        width: 100%;
+        margin: 0;
+        margin-right: 200px;
+    }
+    .produitgammefantome{
+        display: block;
+        opacity: 0;
+    }
+    .produitgamme img{
+        height: 300px;
+    }
+    .recevoir{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .produit{
+        margin-left: 0px;
+        height: 1570px;
+        display: block;
+        text-align: center;
+    }
+    .description{
+        padding: 0px;
+        width: 100%;
+        padding-top: 10px;
+    }
+    .vousaussi{
+        margin-top: 750px;
+    }
+    .imgclients{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .pproduit{
+    width: 100%;
+    }
+    .imgproduit{
+        width: 100%;
+        margin-top: -1700px;
+    }
+    .imgproduit img{
+        width: 60%;
+        height: auto;
+    }
 }
