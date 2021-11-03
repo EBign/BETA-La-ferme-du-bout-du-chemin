@@ -3,7 +3,7 @@ function togglemenu() {
     const navbar = document.querySelector ('nav');
     const ul = document.querySelector ('ul');
     const burger = document.querySelector ('.bouttonnav');
-    burger.addEventListener('click', (e) => {
+    burger.addEventListener('click', () => {
         header.classList.toggle('montreheader');
         ul.classList.toggle('montreul');
         navbar.classList.toggle('montrenav');
