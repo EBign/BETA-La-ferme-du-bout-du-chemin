@@ -417,7 +417,7 @@ footer{
         overflow-x: auto;
     }
     .imggamme::-webkit-scrollbar {
-       width: 0px;
+       width: 50px;
     }
     .produitgamme{
         width: 100%;
