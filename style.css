@@ -1,7 +1,18 @@
+@font-face {
+    font-family: "butlerbold";
+    src: url("Butler_Bold.otf");
+}
+@font-face {
+    font-family: "butlermedium";
+    src: url("Butler_Medium.otf");
+}
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     cursor: default;
-    scroll-behavior: smooth;
+    background-color: #dccec6;
 }
 header{
     display: block;
@@ -48,10 +59,13 @@ ul{
 a{
     text-decoration: none;
     cursor: default;
+    color: white;
+    cursor: pointer;
 }
 li{
-    font-family: arial;
+    font-family: butlerbold;
     font-weight: bold;
+    letter-spacing: 1px;
     color: white;
     font-size: 16px;
     list-style: none;
@@ -60,77 +74,23 @@ li{
 }
 li ul li{
     font-size: 14px;
+    font-family: butlermedium;
     font-weight: lighter;
     margin-top: 10%;
     margin-bottom: 10%;
     cursor: default;
 }
-.calvados{
+.classeproduit{
     background-color: transparent;
     color: white;
 }
-.calvados:hover{
+.classeproduit:hover{
    padding: 4px;
-   background-color: #0B0B61;
    font-weight: bold;
    border-radius: 10px;
    text-shadow: black 2px 0 4px;
    transition-duration: 0.2s;
-}
-.cidredoux{
-    background-color: transparent;
-    color: white;
-}
-.cidredoux:hover{
-   padding: 4px;
-   background-color: #A8F5F3;
-   font-weight: bold;
-   border-radius: 10px;
-   text-shadow: black 2px 0 4px;
-   transition-duration: 0.2s;
-}
-.cidredemisec{
-    background-color: transparent;
-    color: white;
-}
-.cidredemisec:hover{
-   padding: 4px;
-   background-color: #F69E81;
-   font-weight: bold;
-   border-radius: 10px;
-   text-shadow: black 2px 0 4px;
-   transition-duration: 0.2s;
-}
-.cidrebrut{
-    background-color: transparent;
-    color: white;
-}
-.cidrebrut:hover{
-   padding: 4px;
-   background-color: #DE0100;
-   font-weight: bold;
-   border-radius: 10px;
-   text-shadow: black 2px 0 4px;
-   transition-duration: 0.2s;
-}
-.jusdepomme{
-    background-color: transparent;
-    color: white;
-}
-.jusdepomme:hover{
-   padding: 5px;
-   background-color: rgba(255, 255, 255, 0.3);
-   font-weight: bold;
-   border-radius: 10px;
-   text-shadow: black 2px 0 4px;
-   transition-duration: 0.2s;
-}
-.pictogamme{
-    height: 40px;
-}
-.pictoplume{
-    height: 30px;
-    margin-left: -15px;
+   cursor: pointer;
 }
 .accueil{
     margin-left: 200px;
@@ -138,33 +98,60 @@ li ul li{
     background-size: cover;
 }
 .accueil video{
-    width: 100%;
+    width: 75%;
+    margin-left: 60px;
+    margin-top: 50px;
     z-index: -1;
+}
+.coordo{
+    position: absolute;
+    width: 15%;
+    padding: 25px;
+    top: 10px;
+    right: 0;
+    text-align: center;
+    overflow: hidden;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 14px;
+    color: #9e8e85;
+    display: block;
+}
+.coordo img{
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+    transform: translateY(50%);
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 20px;
 }
 .gamme{
     margin-left: 200px;
-    background-image: url(fondmotif2.jpg);
-    background-size: cover;
     z-index: 3;
-    text-align: center;
+    text-align: left;
     margin-top: -28px;
     margin-bottom: -28px;
     }
-.imggamme{
+.imgcaroussel{
     width: 90%;
     margin-left: 5%; 
     display: flex;
     justify-content: space-around;
     justify-content: space-between;
+    margin-top: -250px;
     }
-.txtgamme{
-    font-family: arial;
-    font-size: 30px;
-    padding-top: 20px;
+.txtgamme, .txthistoire, .txtactualite{
+    font-family: butlerbold;
+    font-size: 50px;
+    padding-top: 70px;
+    padding-left: 50px;
 }
 h1{
     font-family: arial;
     font-size: 16px;
+    padding-left: 50px;
+    margin-top: -30px;
 }
 .produitgamme{
     display: block;
@@ -182,6 +169,18 @@ h1{
     height: 0px;
     margin-bottom: 0px; 
 }
+.produitgamme p{
+    width: 200px;
+    margin: auto;
+    text-align: justify;
+}
+.desgeneral{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.generalproduit{
+    margin-left: 50px;
+}
 button{
     width: 120px;
     font-family: arial;
@@ -195,26 +194,64 @@ button{
     border: none;
     margin-bottom: 30px;
 }
-button:hover{
-    transform: scale(1.05);
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-    ;
-}
 .centbutton{
     width: 100%;
     text-align: center;
 }
-.produit{
+.caroussel{
     margin-left: 200px;
-    height: 800px;
-    display: flex;
-    background-image: url(fondmotif.jpg);
-    border-bottom: 1px solid white;
-}
-.description{
-    width: 60%;
-    padding: 50px;
+    height: auto;
+    padding-bottom: 30px;
     display: block;
+}
+#calvados{
+    margin-bottom: -50px;
+}
+#pommeau{
+   margin-top: 250px;
+}
+#vinaigre, #jusdepomme{
+    margin-top: 330px;
+}
+#pommeauvisible{
+    margin: auto;
+    margin-top: -250px;
+    padding-left: 500px;
+}
+#jusdepommevisible, #vinaigrevisible{
+    margin: auto;
+    margin-top: -200px;
+    padding-left: 500px;
+}
+#cidre{
+    margin-top: -50px;
+}
+.titreficheproduitpommeau{
+    font-size: 200px;
+    margin-left: 50px;
+    margin-top: 90px;
+    font-family: butlermedium;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #9e8e85;
+}
+.titreficheproduitpomme{
+    font-size: 150px;
+    margin-left: 50px;
+    margin-top: 90px;
+    font-family: butlermedium;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #9e8e85;
+}
+.titreficheproduitvinaigre{
+    font-size: 120px;
+    margin-left: 50px;
+    margin-top: 90px;
+    font-family: butlermedium;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #9e8e85;
 }
 .pproduit{
     width: 50%;
@@ -228,31 +265,13 @@ button:hover{
     margin-top: 50px;
 }
 .titreficheproduit{
-    font-family: arial;
-    font-size: 30px;
-    color: white;
-    font-weight: bold;
-}
-.imgclients{
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
-    justify-content: space-between;
-    margin-top: 50px;
-}
-.imgclients img{
-    height: 150px;
-    border-radius: 10px;
-}
-.imgclients div{
-    width: 250px;
-    text-align: center;
-}
-.avisclient{
-    font-family: arial;
-    font-size: 16px;
-    font-style: italic;
-    width: 100%;
+    font-size: 200px;
+    margin-left: 50px;
+    margin-top: 90px;
+    font-family: butlermedium;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #9e8e85;
 }
 .imgproduit{
     width: 40%;
@@ -264,12 +283,6 @@ button:hover{
     margin-top: 5%;
     margin-bottom: 5%;
 }
-.prix{
-    font-family: arial;
-    font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.3);
-    margin-bottom: 30px;
-}
 .venteferme{
     font-family: arial;
     font-size: 18px;
@@ -277,23 +290,125 @@ button:hover{
 .bold{
     font-weight: bold;
 }
-.recevoir{
-    width: 20%;
-    margin-left: 40%;
-    font-family: arial;
-    font-size: 18px;
-    padding-bottom: 50px;
-    font-style: italic;
+.histoire{
+    height: auto;
+    padding-bottom: 30px;
+    margin-left: 200px;
+    z-index: 3;
+    text-align: left;
+    margin-top: -28px;
+    }
+.histoireflex{
+    display: flex;
+}
+.imghistoireflex{
+    height: 100px;
+    margin-left: 50px;
+}
+.histoire h4{
+    margin-left: 50px;
+}
+.histoire p{
+    margin-left: 50px;
+    width: 600px;
+    text-align: justify;
+}
+.groupeactualite{
+    height: auto;
+    margin-left: 200px;
+}
+.actualite{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+.jour{
+    font-family: butlerbold;
+    font-size: 40px;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #9e8e85;
+}
+.mois{
+    font-family: butlerbold;
+    font-size: 20px;
+    color: #9e8e85;
+    margin-right: 5px;
+}
+.pro{
+    font-family: butlerbold;
+    font-size: 20px;
+    color: #9e8e85;
+    transform: rotate(270deg);.
+}
+.actualite img{
+    width: 180px;
+    border-radius: 10px;
+}
+.desactualite{
+    display: block;
+    margin-left: 50px;
+}
+.map{
+    margin-left: 200px;
+    margin-bottom: 80px;
+}
+iframe{
+    margin-left: 100px;
+    border-radius: 10px;
 }
 footer{
     display: flex;
-    height: 150px;
-    background-color: black;
-    color: white;
+    height: auto;
+    padding: 20px;
+    color: #9e8e85;
+    background-color: #dccec6;
+    border-top: 2px solid #9e8e85;
     justify-content: space-between;
     justify-content: space-around;
 }
 
+
+@media only screen and (max-width: 1600px){
+    .titreficheproduitpommeau{
+        font-size: 170px;
+        margin-left: 50px;
+        margin-top: 90px;
+        font-family: butlermedium;
+        color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #9e8e85;
+    }
+    .titreficheproduitpomme{
+        font-size: 120px;
+        margin-left: 50px;
+        margin-top: 90px;
+        font-family: butlermedium;
+        color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #9e8e85;
+    }
+    .titreficheproduitvinaigre{
+        font-size: 100px;
+        margin-left: 50px;
+        margin-top: 90px;
+        font-family: butlermedium;
+        color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #9e8e85;
+    }
+    .imghistoireflex{
+        height: 70px;
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+    .accueil video{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 0px;
+        z-index: -1;
+    }
+}
 
 
 @media only screen and (max-width: 1200px) {
@@ -413,13 +528,13 @@ footer{
         font-size: 60px;
         padding-top: 20px;
     }
-    .imggamme{
+    .imgcaroussel{
         width: 100%;
         margin-left: 0%;
         display: flex;
         overflow-x: auto;
     }
-    .imggamme::-webkit-scrollbar {
+    .imgcaroussel::-webkit-scrollbar {
        width: 50px;
        height: 20px;
        color: black;
@@ -440,21 +555,6 @@ footer{
         font-size: 20px;
         padding-bottom: 50px;
     }
-    .venteferme{
-        font-size: 1.2em;
-        padding: 100px;
-        padding-top: 50px;
-    }
-    .prix{
-        font-size: 24px;
-    }
-    .recevoir{
-        width: 80%;
-        margin-left: 10%;
-        font-size: 18px;
-        margin-top: -50px;
-        padding-bottom: 100px;
-    }
     .produit{
         margin-left: 0px;
         height: 1570px;
@@ -464,6 +564,7 @@ footer{
     .titreproduit{
         font-size: 24px;
         font-family: arial;
+        color: white;
     }
     .description{
         padding: 0px;
@@ -472,11 +573,6 @@ footer{
     }
     .vousaussi{
         margin-top: 750px;
-    }
-    .imgclients{
-        display: block;
-        text-align: center;
-        width: 100%;
     }
     .pproduit{
     width: 100%;
